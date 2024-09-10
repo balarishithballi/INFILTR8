@@ -60,7 +60,7 @@ Ensure the following tools are installed on your system:
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/yourusername/infiltr8.git
+   git clone https://github.com/balarishithballi/INFILTR8.git
    cd infiltr8
 Run the Installation Script
 
@@ -76,13 +76,13 @@ Usage
 To run Infiltr8, use the following command:
 
 ```bash
-python3 infiltr8.py {target_url}
+python3 INFILTR8.py {target_url}
 ```
 Replace {target_url} with the URL of the target you want to scan.
 
 Example
 ```bash
-python3 infiltr8.py http://example.com
+python3 INFILTR8.py http://example.com
 ```
 This command will initiate a series of scans against the provided target URL and store the results in the results directory.
 
