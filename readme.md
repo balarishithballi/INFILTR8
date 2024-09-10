@@ -66,24 +66,24 @@ Run the Installation Script
 
 Ensure that the script.sh file is executable and then run it to install any additional dependencies:
 
-bash
-Copy code
-chmod +x script.sh
-./script.sh
+```bash
+  chmod +x script.sh
+  ./script.sh
+```
 This script will handle the installation of required Python packages and other dependencies.
 
 Usage
 To run Infiltr8, use the following command:
 
-bash
-Copy code
+```bash
 python3 infiltr8.py {target_url}
+```
 Replace {target_url} with the URL of the target you want to scan.
 
 Example
-bash
-Copy code
+```bash
 python3 infiltr8.py http://example.com
+```
 This command will initiate a series of scans against the provided target URL and store the results in the results directory.
 
 Contributing
@@ -96,12 +96,9 @@ Contact
 For any questions or feedback, please contact:
 
 Author: r3tr0
-Email: your.email@example.com
-GitHub: https://github.com/yourusername
+Email: balligowri70@gmail.com
+GitHub: https://github.com/BALARISHITHBALLI
 Infiltr8 is a tool designed for ethical hacking and security assessments. Ensure you have permission before using it on any system or network.
-
-markdown
-Copy code
 
 ### Notes
 - **Replace placeholders**: Make sure to replace placeholder text (like image URLs and email addresses) with actual content.
