@@ -1,6 +1,6 @@
 # Infiltr8
 
-![Infiltr8 Banner](assets/banner.png) <!-- Replace with actual banner image URL -->
+![Infiltr8 Banner](assets/Banner.png) <!-- Replace with actual banner image URL -->
 
 Infiltr8 is a comprehensive penetration testing tool designed to automate the execution of various security tools and generate detailed results for security assessments. Developed by r3tr0, Infiltr8 simplifies the process of running multiple security scans and consolidates the results into a single directory for easy review.
 
