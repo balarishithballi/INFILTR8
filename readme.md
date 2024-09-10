@@ -61,7 +61,7 @@ Ensure the following tools are installed on your system:
 
    ```bash
    git clone https://github.com/balarishithballi/INFILTR8.git
-   cd infiltr8
+   cd INFILTR8
 Run the Installation Script
 
 Ensure that the script.sh file is executable and then run it to install any additional dependencies:
