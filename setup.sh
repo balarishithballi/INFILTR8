@@ -15,44 +15,30 @@ add_to_path() {
 sudo apt update
 
 # Install tools
-sudo apt install -y sublist3r theharvester sqlmap wapiti dirb nikto gobuster amass wpscan nmap openvas
+sudo apt install -y sqlmap wapiti nikto gobuster amass wpscan nmap
 
 # Install Impacket using pip
 pip3 install impacket
-
-# Download and install TestSSL (since it's a standalone script)
-if [ ! -d "testssl" ]; then
-    git clone https://github.com/drwetter/testssl.sh.git
-    cd testssl.sh
-    chmod +x testssl.sh
-    sudo ln -s $(pwd)/testssl.sh /usr/local/bin/testssl
-    cd ..
-fi
 
 # Install XSStrike
 if [ ! -d "XSStrike" ]; then
     git clone https://github.com/s0md3v/XSStrike.git
     cd XSStrike
+    chmod +x *
     pip3 install -r requirements.txt
     sudo ln -s $(pwd)/xsstrike.py /usr/local/bin/xsstrike
     cd ..
-fi
-
-# Install nuclei using bash script
-if ! command -v nuclei &> /dev/null; then
-    curl -s https://api.github.com/repos/projectdiscovery/nuclei/releases/latest | grep "browser_download_url.*linux_amd64.zip" | cut -d '"' -f 4 | wget -qi -
-    unzip nuclei-linux_amd64.zip
-    sudo mv nuclei /usr/local/bin/
-    rm nuclei-linux_amd64.zip
 fi
 
 # Install CVE-Search
 if [ ! -d "cve-search" ]; then
     git clone https://github.com/cve-search/cve-search.git
     cd cve-search
+    chmod +x *
     pip3 install -r requirements.txt
     cd ..
 fi
+
 echo "Setting up Python virtual environment..."
 python3 -m venv venv
 source venv/bin/activate
