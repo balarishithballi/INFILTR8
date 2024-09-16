@@ -74,6 +74,15 @@ python3 INFILTR8.py http://example.com
 ```
 This command will initiate a series of scans against the provided target URL and store the results in the results directory.
 
+## Future Plans
+
+- **GUI Interface**: Develop a graphical user interface (GUI) for easier configuration and result visualization.
+- **Advanced Reporting**: Implement advanced reporting features, including customizable reports and interactive data visualizations.
+- **Integration with CI/CD**: Integrate Infiltr8 with continuous integration/continuous deployment (CI/CD) pipelines for automated security assessments during development.
+- **Extended Tool Support**: Add support for additional security tools and frameworks based on user feedback and emerging security trends.
+- **Enhanced Configuration**: Provide a more flexible configuration system to allow users to customize tool settings and scan parameters more easily.
+
+
 Contributing
 Contributions to Infiltr8 are welcome! Please fork the repository, make your changes, and submit a pull request. For major changes, please open an issue first to discuss what you would like to change.
 
