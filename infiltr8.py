@@ -65,7 +65,7 @@ def main(target_url):
         'amass': (f'amass enum -d {target_url} -brute -o results/amass.txt', 'Amass'),
         'wpscan': (f'wpscan --url {target_url} --enumerate u,p,t --disable-tls-checks --output results/wpscan.txt', 'Wpscan'),
         'metasploit': (f'msfconsole -q -x "use auxiliary/scanner/http/http_version; set RHOSTS {target_url}; run; exit" > results/metasploit.txt', 'Metasploit'),
-        'xsstrike': (f'XSStrike/xsstrike.py -u {target_url} --crawl --follow-redirects -o results/xsstrike.txt', 'XSStrike'),
+        'xsstrike': (f'python3 XSStrike/xsstrike.py -u {target_url} --crawl -o results/xsstrike.txt', 'XSStrike'),
         'cve_search': (f'./cve-search.sh {target_url}', 'CVE Search'),
         'impacket': (f'impacket-smbexec {target_ip} -no-pass -debug > results/impacket.txt', 'Impacket'),
         'nmap': (f'sudo nmap -sS -p- -T5 -oN results/nmap.txt {target_ip}', 'Nmap'),
