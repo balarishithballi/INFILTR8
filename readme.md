@@ -64,13 +64,13 @@ Usage
 To run Infiltr8, use the following command:
 
 ```bash
-python3 INFILTR8.py {target_url} #note url==> HTTP (OR) HTTPS
+python3 infiltr8.py {target_url} #note url==> HTTP (OR) HTTPS
 ```
 Replace {target_url} with the URL of the target you want to scan.
 
 Example
 ```bash
-python3 INFILTR8.py http://example.com
+python3 infiltr8.py http://example.com
 ```
 This command will initiate a series of scans against the provided target URL and store the results in the results directory.
 
