@@ -55,8 +55,8 @@ Run the Installation Script
 Ensure that the script.sh file is executable and then run it to install any additional dependencies:
 
 ```bash
-  chmod +x script.sh
-  ./script.sh
+  chmod +x setup.sh
+  ./setup.sh
 ```
 This script will handle the installation of required Python packages and other dependencies.
 
@@ -64,7 +64,7 @@ Usage
 To run Infiltr8, use the following command:
 
 ```bash
-python3 INFILTR8.py {target_url}
+python3 INFILTR8.py {target_url} #note url==> HTTP (OR) HTTPS
 ```
 Replace {target_url} with the URL of the target you want to scan.
 
